@@ -1,6 +1,6 @@
 LOCAL_PATH := device/xiaomi/ido
 
-#USE_CAMERA_STUB := true
+# USE_CAMERA_STUB := true
 
 -include device/cyanogen/msm8939-common/BoardConfigCommon.mk
 
@@ -37,10 +37,10 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
 
 BOARD_KERNEL_CMDLINE := console=115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk
-#BOARD_KERNEL_BASE := 0x80000000
-#BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_KERNEL_CONFIG := ido_defconfig
-#TARGET_KERNEL_SOURCE := ../rrlolli5.1/kernel/samsung/vivalto3gvn
+#TARGET_KERNEL_SOURCE := kernel/xiaomi/ido
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/rootdir/kernel
 
 # Partitions
@@ -106,5 +106,4 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/twrp.fstab
