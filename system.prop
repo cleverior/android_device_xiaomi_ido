@@ -185,3 +185,4 @@ ro.camera.sensors=s5k3l8,ov13853_q13853a,ov5670_q5v41b,s5k5e8
 persist.sys.chgdisabled=0
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+
